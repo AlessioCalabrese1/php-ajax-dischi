@@ -1,0 +1,50 @@
+header {
+    height: 5vh;
+    background-color: #2e3a46;
+}
+
+header img {
+    height: calc(100% - 20px);
+    margin: 10px;
+}
+
+main {
+    background-color: #1e2d3b;
+    height: 95vh;
+    padding-top: 70px;
+}
+
+.musics-card-container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.loader {
+    color: white;
+    font-size: 25px;
+}
+
+.search {
+    padding: 20px;
+}
+
+.music-card-element {
+    width: calc((100% / 5) - 2.5rem);
+    background-color: #2e3a46;
+    margin: 10px 20px;
+}
+
+.music-element-info {
+    color: white;
+}
+
+.music-element-info p {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.music-element-info div {
+    color: #606d74;
+    font-weight: bold;
+}
