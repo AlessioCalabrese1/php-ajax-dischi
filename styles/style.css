@@ -48,3 +48,7 @@ main {
     color: #606d74;
     font-weight: bold;
 }
+
+.form-floating{
+    width: 30%;
+}
