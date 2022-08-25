@@ -1,5 +1,5 @@
-<?php 
-    include __DIR__ . "/db.php"
+<?php
+include __DIR__ . "/../database/db.php"
 ?>
 
 <!DOCTYPE html>
@@ -24,22 +24,22 @@
         <div class="musics-card-container container">
             <div class="row g-2 justify-content-center">
                 <?php foreach ($discs as $disc) { ?>
-                <div class="music-card-element p-3">
-                    <div>
-                        <img class="img-fluid" src="<?php echo $disc["poster"] ?>" alt="Poster">
-                    </div>
-
-                    <div class="text-center music-element-info">
-                        <p class="mt-3">
-                            <?php echo $disc["title"] ?>
-                        </p>
-
+                    <div class="music-card-element p-3">
                         <div>
-                            <?php echo $disc["author"] ?> <br>
-                            <?php echo $disc["year"] ?>
+                            <img class="img-fluid" src="<?php echo $disc["poster"] ?>" alt="Poster">
+                        </div>
+
+                        <div class="text-center music-element-info">
+                            <p class="mt-3">
+                                <?php echo $disc["title"] ?>
+                            </p>
+
+                            <div>
+                                <?php echo $disc["author"] ?> <br>
+                                <?php echo $disc["year"] ?>
+                            </div>
                         </div>
                     </div>
-                </div>
                 <?php } ?>
             </div>
         </div>
