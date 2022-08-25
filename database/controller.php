@@ -10,16 +10,7 @@
 
     if($genreSelected == "All"){
         $filteredDiscs = $discs;
-    }elseif($genreSelected == "Pop"){
-        $filteredDiscs = $discs;
-        $filteredDiscs = array_filter($filteredDiscs, "filtering");
-    }elseif($genreSelected == "Rock"){
-        $filteredDiscs = $discs;
-        $filteredDiscs = array_filter($filteredDiscs, "filtering");
-    }elseif($genreSelected == "Jazz"){
-        $filteredDiscs = $discs;
-        $filteredDiscs = array_filter($filteredDiscs, "filtering");
-    }elseif($genreSelected == "Metal"){
+    }elseif($genreSelected == "Pop" || $genreSelected == "Rock" || $genreSelected == "Jazz" || $genreSelected == "Metal"){
         $filteredDiscs = $discs;
         $filteredDiscs = array_filter($filteredDiscs, "filtering");
     }
